@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_SmallWorld.1257321387.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="BringToTopGUI.cs" t="Include" />
+        <e p="Materials" t="Include">
+          <e p="clouds.shader" t="Include" />
+          <e p="meteorite.shader" t="Include" />
+          <e p="planet_surface.shader" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="AccidentalNoise" t="Include">
+            <e p="AutoCorrect.cs" t="Include" />
+            <e p="BasisFunction.cs" t="Include" />
+            <e p="Bias.cs" t="Include" />
+            <e p="Cache.cs" t="Include" />
+            <e p="Combiner.cs" t="Include" />
+            <e p="Fractal.cs" t="Include" />
+            <e p="Gradient.cs" t="Include" />
+            <e p="IModuleBase.cs" t="Include" />
+            <e p="NoiseGen.cs" t="Include" />
+            <e p="Random_Gen.cs" t="Include" />
+            <e p="RGBACompositeChannels.cs" t="Include" />
+            <e p="ScaleDomain.cs" t="Include" />
+            <e p="ScaleOffset.cs" t="Include" />
+            <e p="Select.cs" t="Include" />
+            <e p="Sphere.cs" t="Include" />
+            <e p="TranslatedDomain.cs" t="Include" />
+            <e p="Util" t="Include">
+              <e p="SMappingRanges.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Internal-Halo.shader" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CameraController.cs" t="Include" />
+          <e p="GUI" t="Include">
+            <e p="ShowNewSystem.cs" t="Include" />
+            <e p="StatManager.cs" t="Include" />
+          </e>
+          <e p="Meteorite.cs" t="Include" />
+          <e p="Pixelation.cs" t="Include" />
+          <e p="PlanetarySystem.cs" t="Include" />
+          <e p="PlanetClouds.cs" t="Include" />
+          <e p="Planets" t="Include">
+            <e p="Planet.cs" t="Include" />
+            <e p="PlanetConfig.cs" t="Include" />
+            <e p="PlanetGen.cs" t="Include" />
+            <e p="PlanetLimits.cs" t="Include" />
+            <e p="PlanetResources.cs" t="Include" />
+          </e>
+          <e p="SystemCreator.cs" t="Include" />
+          <e p="TextureGen" t="Include">
+            <e p="CivTexGen.cs" t="Include" />
+            <e p="TextureGen.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SmallWorld.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
