@@ -14,9 +14,9 @@ public class Pixelation : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.depth = -9999;
-		GUI.DrawTexture(new Rect(0, 0, Screen.width,  Screen.height), renderTexture, ScaleMode.ScaleToFit, false);
-		GUI.depth = -9999;
+		GUI.depth = -99999;
+		//GUI.DrawTexture(new Rect(0, 0, Screen.width,  Screen.height), renderTexture, ScaleMode.ScaleToFit, false);
+		GUI.depth = -99999;
 	}
 
 	int NearestSuperiorPowerOf2( int n ) {

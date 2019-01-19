@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/planet_surface" {
+﻿Shader "Custom/planet_surface" {
 
 Properties 
 	{
@@ -53,7 +51,6 @@ Properties
 			float4 SandCol;
 			float4 MountainCol;
 			float4 NightLightsCol;
-			
 
 			struct v2f
 			{
@@ -61,7 +58,6 @@ Properties
 				float3 lightDir : TEXCOORD0;
 				float3 normal : TEXCOORD1;
 				float2 uv : TEXCOORD2;
-				float2 screenPos:TEXCOORD4;
 				LIGHTING_COORDS(3, 4)
 			};
 
@@ -73,9 +69,8 @@ Properties
 				o.uv = v.texcoord;
 				o.lightDir = normalize(ObjSpaceLightDir(v.vertex));
 				o.normal = normalize(v.normal).xyz;
-				o.screenPos = ComputeScreenPos(v.vertex);
 
-				TRANSFER_VERTEX_TO_FRAGMENT(o);
+			    TRANSFER_VERTEX_TO_FRAGMENT(o);
 
 				return o; 
 			}
@@ -95,11 +90,8 @@ Properties
 
 				float4 diffuseTerm = NdotL * _LightColor0 * _DiffuseTint * attenuation;
 
-
 				// Dither texture
-				float4 dither = tex2D(_DitherTexture, i.screenPos.xy);
-				float dith = dither.r / 25;
-				float diff = diffuseTerm.r + dith;
+				float diff = diffuseTerm.r;
 
 				// Discretize the intensity, based on a few cutoff points
 			    if (diff > 0.95) {
@@ -115,9 +107,7 @@ Properties
 			        night = 3;
 			    }
 
-
 				float4 diffuse = tex2D(_DiffuseTexture, i.uv);
-
 				float4 pColor;
 
                 if(diffuse.r < SeaLevel - 0.17) {
@@ -146,7 +136,6 @@ Properties
                 } 
 
                 float4 finalColor = (ambient + diffuseTerm) * pColor;
-
 				return finalColor;
 
 			}
